@@ -10,7 +10,7 @@ args = parser.parse_args()
 
 
 # Resize Image Function
-def resize(image, new_width=40):
+def resize(image, new_width=35):
     width, height = image.size
     new_height = new_width * height // width
     return image.resize((int(new_width * 2.7), new_height))
